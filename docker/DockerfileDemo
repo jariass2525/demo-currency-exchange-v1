@@ -1,0 +1,13 @@
+FROM jarias1515/java8
+
+MAINTAINER Author Name <hipnos2008@gmail.com>
+
+
+EXPOSE 9090
+
+ADD ./demo-currency-exchange-v1-1.0.0-SNAPSHOT.jar /JAVA_PROJECTS
+
+
+CMD ["java","-jar","./JAVA_PROJECTS/demo-currency-exchange-v1-1.0.0-SNAPSHOT.jar"]
+
+
