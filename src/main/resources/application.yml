@@ -1,6 +1,11 @@
 server:
   port: 9090
   
-
+application:
+  error:
+    errorMap:
+      'ERROR-001': 'Some request values are invalid'
+      'ERROR-002': 'Rate not found for origin/target currency'
+      'ERROR-999': 'An unespected error has ocurred'
 
 
