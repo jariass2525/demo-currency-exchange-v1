@@ -1,0 +1,22 @@
+apiVersion: v1
+kind: Deployment
+metadata:
+  name: exchange-rate
+  labels:
+    app: exchange-rate
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: exchange-rate
+  template:
+    metadata:
+      name: exchange-rate-pod
+      labels:
+        app: exchange-rate
+    spec:
+      containers:
+      - name: exchange-rate
+        image: jarias1515/demoexchange 
+        ports:
+        - containerPort: 9090
