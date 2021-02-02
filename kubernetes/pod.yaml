@@ -7,6 +7,6 @@ metadata:
 spec:
   containers:
   - name: exchange-rate
-    image: jarias1515/demoexchange 
+    image: dockercoins/rng
     ports:
     - containerPort: 9090
